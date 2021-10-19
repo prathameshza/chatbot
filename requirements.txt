@@ -1,8 +1,8 @@
 #Libraries used are:-
 chatterbot
 chatterbot-corpus
-pyyaml
-spacy
+pyyaml=5.1
+spacy=2.1
 numpy
 flask
 wikipedia
