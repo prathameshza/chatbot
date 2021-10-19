@@ -1,0 +1,7 @@
+#Libraries used are:-
+chatterbot
+chatterbot-corpus
+pyyaml
+spacy
+numpy
+flask
