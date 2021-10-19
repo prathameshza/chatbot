@@ -2,7 +2,7 @@
 chatterbot
 chatterbot-corpus
 pyyaml==5.1
-spacy==2.1
+spacy==2.3.5
 numpy
 flask
 wikipedia
