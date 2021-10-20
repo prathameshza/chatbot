@@ -6,3 +6,4 @@ spacy==2.3.5
 numpy
 flask
 wikipedia
+gunicorn==20.0.4
