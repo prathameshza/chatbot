@@ -1,50 +1,8 @@
-#Libraries used are:-
+#libraries used are
 #can skip gunicorn
 gunicorn
-beautifulsoup4==4.10.0
-blis==0.7.5
-catalogue==2.0.6
-certifi==2021.10.8
-charset-normalizer==2.0.7
-ChatterBot==1.0.8
-chatterbot-corpus==1.2.0
-click==8.0.3
-colorama==0.4.4
-cymem==2.0.6
-en-core-web-sm @https://github-releases.githubusercontent.com/84940268/91614580-d516-11eb-8aec-29de6db356b7?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20211027%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211027T103640Z&X-Amz-Expires=300&X-Amz-Signature=910dc06f99b56a125d258beca8e644b75a7881e2af3be679b47fe61a8db71da3&X-Amz-SignedHeaders=host&actor_id=46810093&key_id=0&repo_id=84940268&response-content-disposition=attachment%3B%20filename%3Den_core_web_sm-3.1.0.tar.gz&response-content-type=application%2Foctet-stream
-Flask==2.0.2
-idna==3.3
-importlib-metadata==4.8.1
-itsdangerous==2.0.1
-Jinja2==3.0.2
-MarkupSafe==2.0.1
-mathparse==0.1.2
-murmurhash==1.0.6
-numpy==1.21.3
-packaging==21.0
-pathy==0.6.1
-pip==20.1.1
-preshed==3.0.6
-pydantic==1.8.2
-pyparsing==3.0.1
-python-dateutil==2.8.2
-pytz==2021.3
-PyYAML==3.13
-requests==2.26.0
-setuptools==47.1.0
-six==1.16.0
-smart-open==5.2.1
-soupsieve==2.2.1
-spacy==3.1.3
-spacy-legacy==3.0.8
-SQLAlchemy==1.3.24
-srsly==2.4.2
-thinc==8.0.11
-tqdm==4.62.3
-typer==0.4.0
-typing-extensions==3.10.0.2
-urllib3==1.26.7
-wasabi==0.8.2
-Werkzeug==2.0.2
-wikipedia==1.4.0
-zipp==3.6.0
+flask
+chatterbot
+chatterbot-corpus
+spacy
+wikipedia
