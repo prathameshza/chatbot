@@ -1,6 +1,6 @@
 gunicorn
 chatterbot-corpus
 chatterbot
-spacy
+spacy==2.1.9
 flask
 wikipedia
