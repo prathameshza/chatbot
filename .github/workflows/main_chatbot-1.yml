@@ -27,11 +27,11 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           
-      - name: Instaiing en-core-wb-sm
-        run: python -m spacy download en_core_web_sm
-      
       - name: Install dependencies
         run: pip install -r requirements.txt
+      
+      - name: Istalling en-core-web-sm
+        run: python -m spacy download en_core_web_sm
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
