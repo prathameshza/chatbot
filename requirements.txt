@@ -1,5 +1,7 @@
 gunicorn
 gevent
+python-libevent
+greenlet
 ChatterBot==1.0.0
 chatterbot-corpus==1.2.0
 PyYAML==3.13
