@@ -4,6 +4,7 @@ greenlet
 ChatterBot==1.0.0
 chatterbot-corpus==1.2.0
 PyYAML==3.13
+Flask-SQLAlchemy
 spacy==2.1.9
 pytz==2019.3
 flask 
