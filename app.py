@@ -20,6 +20,8 @@ read_only=True
 def index():
     return render_template("index.html")
 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
+
 @app.route("/get")
 #function for the bot response
 def get_bot_response():
