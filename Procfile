@@ -1,1 +1,1 @@
-web: gunicorn app:app --timeout 600 --worker-class sentry
+web: gunicorn app:app --timeout 600 --worker-class tornado
