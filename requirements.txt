@@ -1,5 +1,5 @@
 gunicorn
-tornado
+sync
 greenlet
 ChatterBot==1.0.0
 chatterbot-corpus==1.2.0
