@@ -3,11 +3,11 @@ from flask import Flask, render_template, request
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 from flask.wrappers import Response
-from flask_sqlalchemy import SQLAlchemy
+# from flask_sqlalchemy import SQLAlchemy
 import wikipedia
 from wikipedia.exceptions import PageError
-import nltk
-nltk.download('punkt')
+# import nltk
+# nltk.download('punkt')
 
 app = Flask(__name__)
 #create chatbot
