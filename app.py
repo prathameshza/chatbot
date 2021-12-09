@@ -22,6 +22,7 @@ def index():
     return render_template("index.html")
 
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
+basedir="/"
 SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'db.sqlite3')
 
 @app.route("/get")
