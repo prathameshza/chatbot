@@ -5,6 +5,7 @@ from chatterbot.trainers import ChatterBotCorpusTrainer
 from flask.wrappers import Response
 # from flask_sqlalchemy import SQLAlchemy
 import wikipedia
+import os
 from wikipedia.exceptions import PageError
 # import nltk
 # nltk.download('punkt')
@@ -21,6 +22,7 @@ def index():
     return render_template("index.html")
 
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
+SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'db.sqlite3')
 
 @app.route("/get")
 #function for the bot response
