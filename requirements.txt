@@ -7,3 +7,4 @@ spacy==2.1.9
 pytz==2019.3
 flask 
 wikipedia
+pymongo[srv]
