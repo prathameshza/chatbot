@@ -8,3 +8,4 @@ pytz==2019.3
 flask 
 wikipedia
 pymongo[srv]
+boto
