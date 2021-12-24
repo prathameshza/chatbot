@@ -12,7 +12,7 @@ from wikipedia.exceptions import PageError
 
 app = Flask(__name__)
 #create chatbot
-englishBot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.SQLStorageAdapter")
+englishBot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.MongoDatabaseAdapter")
 trainer = ChatterBotCorpusTrainer(englishBot)
 trainer.train("chatterbot.corpus.english")
 read_only=True
@@ -20,11 +20,6 @@ read_only=True
 @app.route("/")
 def index():
     return render_template("index.html")
-
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
-basedir="/"
-SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'db.sqlite3')
-# SQLALCHEMY_DATABASE_URI = 'postgresql://localhost/db.sqlite3'
 
 @app.route("/get")
 #function for the bot response
@@ -39,10 +34,6 @@ def get_bot_response():
     else:
         statement=str(englishBot.get_response(userText))
     return statement
-
-#@app.before_first_request
-#def create_tables():
-#    db.create_all()
 
 if __name__ == "__main__":
     app.run()
