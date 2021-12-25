@@ -17,7 +17,7 @@ englishBot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.MongoData
 trainer = ChatterBotCorpusTrainer(englishBot)
 trainer.train("chatterbot.corpus.english")
 read_only=True
-DATABASE_URI=os.environ['MONGODB_URI']
+DATABASE_URI="mongodb+srv://prathmesh:7666945902@freecls0.knbku.mongodb.net/chatbotdb?retryWrites=true&w=majority"
 #define app routes
 @app.route("/")
 def index():
