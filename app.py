@@ -6,8 +6,8 @@ from flask.wrappers import Response
 # from flask_sqlalchemy import SQLAlchemy
 import wikipedia
 import os
+from os import environ
 from wikipedia.exceptions import PageError
-from boto.s3.connection import S3Connection
 # import nltk
 # nltk.download('punkt')
 
@@ -17,7 +17,7 @@ englishBot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.MongoData
 trainer = ChatterBotCorpusTrainer(englishBot)
 trainer.train("chatterbot.corpus.english")
 read_only=True
-s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
+DATABASE_URI=os.environ['MONGODB_URI']
 #define app routes
 @app.route("/")
 def index():
