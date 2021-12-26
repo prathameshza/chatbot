@@ -18,7 +18,7 @@ trainer = ChatterBotCorpusTrainer(englishBot)
 trainer.train("chatterbot.corpus.english")
 read_only=True
 
-
+os.getenv("MONGODB_URI")
 #define app routes
 @app.route("/")
 def index():
