@@ -5,8 +5,8 @@ from chatterbot.trainers import ChatterBotCorpusTrainer
 from flask.wrappers import Response
 # from flask_sqlalchemy import SQLAlchemy
 import wikipedia
-import os
 from os import environ as env
+import pymongo
 from wikipedia.exceptions import PageError
 # import nltk
 # nltk.download('punkt')
@@ -19,6 +19,10 @@ trainer.train("chatterbot.corpus.english")
 read_only=True
 
 DATABASE_URI=env["MONGODB_URI"]
+
+client=pymongo.MongoClient(DATABASE_URI)
+mongo_db=client.db
+
 #define app routes
 @app.route("/")
 def index():
