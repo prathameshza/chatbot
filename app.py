@@ -18,10 +18,7 @@ trainer = ChatterBotCorpusTrainer(englishBot)
 trainer.train("chatterbot.corpus.english")
 read_only=True
 
-DATABASE_URI=env["MONGODB_URI"]
-
-client=pymongo.MongoClient(DATABASE_URI)
-mongo_db=client.db
+DATABASE_URI='mongodb://localhost:27017/chatbotdb'
 
 #define app routes
 @app.route("/")
