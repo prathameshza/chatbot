@@ -6,7 +6,7 @@ from flask.wrappers import Response
 # from flask_sqlalchemy import SQLAlchemy
 import wikipedia
 import os
-from os import environ
+from os import environ as env
 from wikipedia.exceptions import PageError
 # import nltk
 # nltk.download('punkt')
@@ -18,7 +18,8 @@ trainer = ChatterBotCorpusTrainer(englishBot)
 trainer.train("chatterbot.corpus.english")
 read_only=True
 
-os.environ["MONGODB_URI"]
+env["MONGODB_URI"]
+print(env["MONGODB_URI"])
 #define app routes
 @app.route("/")
 def index():
