@@ -6,20 +6,17 @@ from flask.wrappers import Response
 # from flask_sqlalchemy import SQLAlchemy
 import wikipedia
 from os import environ as env
-from flask_pymongo import PyMongo
 from wikipedia.exceptions import PageError
 # import nltk
 # nltk.download('punkt')
 
 app = Flask(__name__)
 #create chatbot
-englishBot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.MongoDatabaseAdapter")
+englishBot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.SQLStorageAdapter")
 trainer = ChatterBotCorpusTrainer(englishBot)
 trainer.train("chatterbot.corpus.english")
 read_only=True
 
-app.config["MONGO_URI"] = env["MONGODB_URI"]
-mongo = PyMongo(app)
 
 #define app routes
 @app.route("/")
