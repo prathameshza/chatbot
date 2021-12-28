@@ -27,7 +27,7 @@ def fixBadZipfile(zipFile):
      f.truncate()  
      f.close()  
  else:  
-     raise error, file is truncated  
+     print("don't work baka")  
 
 #define app routes
 @app.route("/")
