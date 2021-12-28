@@ -7,8 +7,8 @@ from flask.wrappers import Response
 import wikipedia
 from os import environ as env
 from wikipedia.exceptions import PageError
-import nltk
-nltk.download('punkt')
+# import nltk
+# nltk.download('punkt')
 
 app = Flask(__name__)
 #create chatbot
@@ -16,18 +16,6 @@ englishBot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.SQLStorag
 trainer = ChatterBotCorpusTrainer(englishBot)
 trainer.train("chatterbot.corpus.english")
 read_only=True
-
-def fixBadZipfile(zipFile):  
- f = open(zipFile, 'r+b')  
- data = f.read()  
- pos = data.find('b\x50\x4b\x05\x06') # End of central directory signature  
- if (pos > 0):  
-     self._log("Trancating file at location " + str(pos + 22)+ ".")  
-     f.seek(pos + 22)   # size of 'ZIP end of central directory record' 
-     f.truncate()  
-     f.close()  
- else:  
-     print("don't work baka")  
 
 #define app routes
 @app.route("/")
