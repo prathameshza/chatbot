@@ -12,12 +12,11 @@ from wikipedia.exceptions import PageError
 
 app = Flask(__name__)
 #create chatbot
-englishBot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.MongoDatabaseAdapter")
+englishBot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.SQLStorageAdapter")
 trainer = ChatterBotCorpusTrainer(englishBot)
 trainer.train("chatterbot.corpus.english")
 read_only=True
 
-DATABASE_URI="mongodb://prathmesh:7666945902@freecls0-shard-00-00.knbku.mongodb.net:27017,freecls0-shard-00-01.knbku.mongodb.net:27017,freecls0-shard-00-02.knbku.mongodb.net:27017/chatbotdb?ssl=true&replicaSet=atlas-1qqqa1-shard-0&authSource=admin&retryWrites=true&w=majority"
 
 #define app routes
 @app.route("/")
