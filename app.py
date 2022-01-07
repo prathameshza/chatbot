@@ -7,8 +7,8 @@ from flask.wrappers import Response
 import wikipedia
 from os import environ as env
 from wikipedia.exceptions import PageError
-import nltk
-nltk.download('punkt')
+# import nltk
+# nltk.download('punkt')
 
 app = Flask(__name__)
 #create chatbot
