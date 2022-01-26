@@ -20,7 +20,7 @@ read_only=True
 
 #define app routes
 @app.route("/")
-app.run()
+
 def index():
     return render_template("index.html")
 
