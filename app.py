@@ -8,7 +8,7 @@ import wikipedia
 from os import environ as env
 from wikipedia.exceptions import PageError
 import nltk
-nltk.download('punkt')
+nltk.download('corpora','tokenizers','taggers')
 
 app = Flask(__name__)
 #create chatbot
