@@ -1,7 +1,7 @@
 A simple chatbot based on chatterbot and wikipedia python module.
 
 It's deployed on heroku so have a look at
-https://chatbot-24.herokuapp.com/
+https://chatbot-1.azurewebsites.net
 
 Note:It loads a bit slow so you might have to wait a lil bit.Also if application error occured please refresh the page again
 and if the problem still persist report it to me.
