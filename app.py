@@ -9,7 +9,7 @@ from os import environ as env
 from wikipedia.exceptions import PageError
 import nltk
 # nltk.download('corpora','tokenizers','taggers')
-nltk.download('all')
+# nltk.download('all')
 
 app = Flask(__name__)
 #create chatbot
