@@ -9,4 +9,3 @@ pytz==2019.3
 flask 
 wikipedia
 nltk
-pymongo
