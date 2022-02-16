@@ -13,12 +13,12 @@ import nltk
 
 app = Flask(__name__)
 #create chatbot
-englishBot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.SQLStorageAdapter")
+englishBot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.MongoDatabaseAdapter")
 trainer = ChatterBotCorpusTrainer(englishBot)
 trainer.train("chatterbot.corpus.english")
 read_only=True
 
-
+DATABASE_URI=env.get('MONGOURI')
 
 #define app routes
 @app.route("/")
