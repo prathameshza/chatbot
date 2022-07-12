@@ -26,5 +26,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: visit site
-      run: ping https://chatbot-1.azurewebsites.net/
+    - name: Ping my site
+  # You may pin to the exact commit or the version.
+  # uses: Leocardoso94/is-my-site-up@dd9b46848d4e3e871dfb20cf98de8fa6caf35324
+      uses: Leocardoso94/is-my-site-up@v1.2
+      with:
+    # Site's url
+        site: https://chatbot-1.azurewebsites.net/
