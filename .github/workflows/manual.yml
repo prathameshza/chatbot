@@ -11,7 +11,7 @@ jobs:
     name: A job to ping
     runs-on: ubuntu-latest
     env:
-      URL: https://chatbot-1.azurewebsites.net/
+#       URL: https://chatbot-1.azurewebsites.net/
       METHOD: GET  # the method used to make the request. It is GET by default
     steps:
       - id: ping
