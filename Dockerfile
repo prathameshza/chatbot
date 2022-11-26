@@ -4,7 +4,7 @@ FROM debian:latest
 ENV TZ=Asia/Culcutta
 ENV DEBIAN_FRONTEND=noninteractiveR
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y python3 python3-pip python3-pytz gunicorn 
+RUN apt-get install -y python3 python3-pip gunicorn 
 # Allow statements and log messages to immediately appear in the Knative logs
 ENV PYTHONUNBUFFERED True
 
