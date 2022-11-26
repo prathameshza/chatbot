@@ -1,4 +1,3 @@
-ChatterBot==1.1.0
-chatterbot-corpus
+ChatterBot==1.0.4
 gunicorn
 flask
