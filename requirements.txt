@@ -1,6 +1,12 @@
-pyyaml==3.13
-spacy==3.4.3
-ChatterBot==1.0.4
 gunicorn
-flask
-pytz
+ChatterBot==1.1.0
+chatterbot-corpus==1.2.0
+#PyYAML==3.13
+pyyaml
+#spacy==2.1.9 for local 3.7.9 python
+spacy
+pytz==2019.3
+flask 
+wikipedia
+nltk
+sqlalchemy==1.2.19
