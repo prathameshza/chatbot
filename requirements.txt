@@ -1,4 +1,4 @@
-pyyaml==3.10
+pyyaml<4.0,>=3.12
 ChatterBot==1.0.4
 gunicorn
 flask
