@@ -3,7 +3,7 @@ gevent
 ChatterBot==1.0.0
 chatterbot-corpus==1.2.0
 #PyYAML==3.13
-PyYAML
+pyyaml==6.0b1
 #spacy==2.1.9 for local 3.7.9 python
 spacy
 pytz==2019.3
