@@ -1,7 +1,7 @@
 A simple chatbot based on chatterbot and wikipedia python module.
 
 It's deployed on heroku so have a look at
-https://chatbot-qsgdzexqtq-uc.a.run.app
+https://chatbot-qsgdzexqtq-ue.a.run.app/
 
 Note:It loads a bit slow so you might have to wait a lil bit.Also if application error occured please refresh the page again
 and if the problem still persist report it to me.
