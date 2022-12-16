@@ -12,9 +12,3 @@ Built with Basic Html Css Js and Bootstrap.
 #Search Options
 
 wiki,Find,search and pedia should be used to search wikipedia for a topic.
-
-#Server side stuff
-
-Not really good at that but it uses gunicorn server and gevent worker.
-I wanted to deploy it with Nginx but was not able to find any practical solution for it so I left it as it is.
-If you know how please do share it.
