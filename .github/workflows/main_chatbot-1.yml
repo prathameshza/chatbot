@@ -27,8 +27,8 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           
-      - name: Install Setuptools
-        run: pip install setuptools==65.4.0
+      - name: Install wheel
+        run: pip install wheel==0.32.2
       
       - name: Install dependencies
         run: pip install -r requirements.txt
