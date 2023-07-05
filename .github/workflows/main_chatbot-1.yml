@@ -27,8 +27,11 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           
-      - name: Install chatterbot
-        run: pip install chatterbot
+      - name: Install wheel
+        run: pip install wheel==0.32.3
+        
+      - name: Install preshed
+        run: pip install preshed==2.0.1
       
       - name: Install dependencies
         run: pip install -r requirements.txt
