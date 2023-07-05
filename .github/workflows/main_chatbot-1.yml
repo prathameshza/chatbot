@@ -28,7 +28,7 @@ jobs:
           source venv/bin/activate
           
       - name: Install wheel
-        run: pip install wheel==0.32.2
+        run: pip install wheel==0.33.0
       
       - name: Install dependencies
         run: pip install -r requirements.txt
