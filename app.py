@@ -3,6 +3,7 @@ from flask import Flask, render_template, request
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 from flask.wrappers import Response
+from whitenoise import WhiteNoise
 # from flask_sqlalchemy import SQLAlchemy
 import wikipedia
 from os import environ as env
@@ -12,6 +13,7 @@ import nltk
 # nltk.download('all')
 
 app = Flask(__name__)
+app.wsgi_app = WhiteNoise(app.wsgi_app, root="static/")
 #create chatbot
 englishBot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.SQLStorageAdapter")
 trainer = ChatterBotCorpusTrainer(englishBot)
