@@ -28,7 +28,7 @@ jobs:
           source venv/bin/activate
           
       - name: Install preshed
-        run: pip install preshed==1.0.1
+        run: pip install preshed==2.0.1
       
       - name: Install dependencies
         run: pip install -r requirements.txt
