@@ -26,12 +26,6 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-          
-      - name: Install wheel
-        run: pip install wheel==0.32.3
-        
-      - name: Install preshed
-        run: pip install preshed==2.0.1 --no-use-pep517
       
       - name: Install dependencies
         run: pip install -r requirements.txt
