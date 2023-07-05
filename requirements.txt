@@ -1,5 +1,6 @@
 # Python 3.7
 gunicorn
+whitenoise
 ChatterBot
 chatterbot-corpus==1.2.0
 #PyYAML==3.13
