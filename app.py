@@ -8,9 +8,6 @@ from whitenoise import WhiteNoise
 import wikipedia
 from os import environ as env
 from wikipedia.exceptions import PageError
-import nltk
-# nltk.download('corpora','tokenizers','taggers')
-# nltk.download('all')
 
 app = Flask(__name__)
 app.wsgi_app = WhiteNoise(app.wsgi_app, root="static/")
